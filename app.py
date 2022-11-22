@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from peewee import *
 from playhouse.shortcuts import model_to_dict, dict_to_model
 
-db = PostgresqlDatabase('presidents', user='mateolopez-castillo', password='', host='localhost', port=5432)
+db = PostgresqlDatabase('presidents', user='postgres', password='', host='localhost', port=5432)
 
 class BaseModel(Model):
   class Meta:
